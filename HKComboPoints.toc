@@ -1,0 +1,8 @@
+## Interface: 40200
+## Title: |cFFFF62E0Hello Kitty Combo Points
+## Author: Psychoshamoo of Dalvengyr
+## Version: 0.1
+## Notes: The addon that makes your combo points ADORABLE.
+## DefaultState: Enabled
+
+main.lua
