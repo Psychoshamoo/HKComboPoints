@@ -9,10 +9,12 @@ for i = 1, 5 do
 	childFrame:SetWidth(FRAME_HEIGHT)
 	childFrame:SetHeight(FRAME_HEIGHT)
 	childFrame:SetPoint("TOPLEFT", (i - 1) * FRAME_HEIGHT, 0)
-
-	local background = childFrame:CreateTexture("HelloKittyComboPoint"..i.."Background", "BACKGROUND")
-	background:SetTexture(1, 1, 1, 0.25)
-	background:SetAllPoints()
+	childFrame:SetBackdrop({
+		bgFile = [[Interface\Addons\HKComboPoints\tex]],
+		tile = false,
+		tileSize = FRAME_HEIGHT
+	})
+	childFrame:SetBackdropColor(1, 1, 1, 1)
 	childFrame:Hide()
 end
 
